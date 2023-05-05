@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: "montserrat",sans-serif;
+            }
+            .contact-section{
+                background: url(images/stylish-soft-blue-curve-lines-abstract-background.jpg) no-repeat center;
+                background-size: cover;
+                padding: 40px 0;
+            }
+            .contact-section h1{
+                text-align: center;
+            }
+            .border {
+                width: 100px;
+                height: 10px;
+                background-color: rgb(100, 149, 237);
+                margin: 40px auto;
+            }
+            .contact-form {
+                max-width: 600px;
+                margin: auto;
+                padding: 0 10px;
+                overflow: hidden;
+            }
+            .contact-form-text {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin: 16px 0;
+                border: 0;
+                background: transparent;
+                outline: none;
+                padding: 20px 40px;
+                color: black;
+                transition: 0.5s;
+                border-radius: 50px;
+            }
+            .contact-form-text:hover {
+                box-shadow: 0 0 10px 4px #34495e;
+            }
+            .contact-form-text:focus{
+                box-shadow: 0 0 10px 4px #FF0095;
+            }
+            textarea.contact-form-text{
+                resize: none;
+                height: 140px;
+            }
+           .contact-form-btn {
+                float: right;
+                border: 0;
+                font-size: 15px;
+                font-weight: 700;
+                background: #4D7DB4;
+                color: rgb(0, 0, 0);
+                padding: 12px 50px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .contact-form-btn:hover{
+                background-color: #FF0095;
+            }
+            .contact-form-bbtn {
+                float: left;
+                border: 0;
+                font-size: 15px;
+                font-weight: 700;
+                background: #4D7DB4;
+                color: rgb(0, 0, 0);
+                padding: 12px 50px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .contact-form-bbtn:hover{
+                background-color: #FF0095;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="border"></div>
+            <form class="contact-form" action="https://formspree.io/f/xgedqowo" method="post">
+                <input name="Name" type="text" class="contact-form-text" placeholder="Your Name Here ">
+                <input name="E-Mail" type="email" class="contact-form-text" placeholder="Your E-Mail Id Here ">
+                <input name="PhoneNo." type="text" class="contact-form-text" placeholder="Your Phone Here ">
+                <textarea name="Message" class="contact-form-text" placeholder="Your Message Here"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+                <a href="index.html">
+                <input type="back" class="contact-form-bbtn" value="Home"></a>
+
+
+            </form>
+        </div>
+    </body>
+</html>
